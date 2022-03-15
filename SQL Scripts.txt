@@ -1,0 +1,289 @@
+
+CREATE DATABASE TESTVIDAVALOR; 
+
+CREATE TABLE Progress_Patient_Age_Status (
+
+	mse_check_pn_age_young BIT,
+	mse_check_pn_age_middle_aged BIT,
+	mse_check_pn_age_elderly BIT,
+	mse_check_pn_age_appears_stated_age BIT,
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Weight_Status (
+
+	mse_check_pn_wt_average BIT,
+	mse_check_pn_wt_overweight BIT,
+	mse_check_pn_wt_obese BIT,
+	mse_check_pn_wt_underweight BIT,
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Grooming_Status (
+
+	mse_check_pn_grm_well_cladded BIT,
+	mse_check_pn_grm_clumsy BIT,
+	mse_check_pn_grm_good_eyecontact BIT,
+	mse_check_pn_grm_bad_eyecontact BIT,
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Gait_Status (
+
+	mse_check_pn_gait_normal BIT,
+	mse_check_pn_gait_awkward BIT,
+	mse_check_pn_gait_staggering BIT,
+	mse_check_pn_gait_shuffling BIT,
+	mse_check_pn_gait_rigid BIT,
+	mse_check_gn_gait_high_stepping BIT
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Posture_Status (
+
+	mse_check_pn_posture_normal BIT,
+	mse_check_pn_posture_stooped BIT,
+	mse_check_pn_posture_kyphosis BIT,
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Attitude_Status (
+	
+	mse_check_pn_attit_calm BIT,
+	mse_check_pn_attit_cooperative BIT,
+	mse_check_pn_attit_uncooperative BIT,
+	mse_check_pn_attit_belligerent BIT,
+	mse_check_pn_attit_negativistic BIT,
+	mse_check_pn_attit_suspicous BIT,
+	mse_check_pn_attit_apathetic BIT,
+	mse_check_pn_attit_fearful BIT,
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Thought_Content_Delusion_Status (
+
+	mse_check_pn_thoughtcont_del_paranoid BIT,
+	mse_check_pn_thoughtcont_del_persecutory BIT,
+	mse_check_pn_thoughtcont_del_control BIT,
+	mse_check_pn_thoughtcont_del_grandiose BIT,
+	mse_check_pn_thoughtcont_del_reference BIT,
+	mse_check_pn_thoughtcont_del_nihilistic BIT,
+	mse_check_pn_thoughtcont_del_jealousy BIT,
+	mse_check_pn_thoughtcont_del_guilt BIT,
+	mse_check_pn_thoughtcont_del_erotic BIT,
+	mse_check_pn_thoughtcont_del_sematic BIT,
+	mse_check_pn_thoughtcont_del_religous BIT,
+	mse_check_pn_thoughtcont_del_bizarre BIT,
+	ACN BIGINT,
+
+);
+
+CREATE TABLE Progress_Patient_Thought_Content_Overvalued_Idea_Status (
+
+	mse_check_pn_thoughtcont_ovr_paranoid BIT,
+	mse_check_pn_thoughtcont_ovr_control BIT,
+	mse_check_pn_thoughtcont_ovr_reference BIT,
+	mse_check_pn_thoughtcont_ovr_obsession BIT,
+	mse_check_pn_thoughtcont_ovr_suicidal_thought BIT,
+	mse_check_pn_thoughtcont_ovr_homicidal_thought BIT,
+	mse_check_pn_thoughtcont_ovr_no disturbance BIT,
+	mse_openttxt_pn_thoughtcont_ovr_other VARCHAR(1000),
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Four_Sphere_Orientation_Status (
+
+	mse_check_pn_orient_place BIT,	
+	mse_check_pn_orient_person BIT,	
+	mse_check_pn_orient_time BIT,
+	mse_check_pn_orient_reason_admission BIT,
+	mse_check_pn_orient_within_normal_limits BIT,
+	mse_check_pn_orient_impaired BIT,
+	ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Concentration_Status (
+
+mse_check_pn_conc_spell BIT,
+mse_check_pn_conc_serial BIT,
+mse_check_pn_conc_rapidcount BIT,
+mse_check_pn_conc_age_approp BIT,
+mse_check_pn_conc_within_normal_limits BIT,
+mse_check_pn_conc_impaired BIT,
+ACN BIGINT,
+
+);
+
+CREATE TABLE Progess_Patient_Mental_Status_Exam_Recommendation (
+
+mse_check_pn_rec_med_stabilization BIT,
+mse_check_pn_rec_milieu_therapy BIT,
+mse_check_pn_rec_med_management BIT,
+mse_check_pn_rec_coping_skills BIT,
+mse_check_pn_rec_group_therapy BIT,
+mse_check_pn_rec_participation BIT,
+mse_opentxt_pn_rec_other BIT,
+ACN BIGINT,
+);
+
+ CREATE TABLE Progress_Motor_Activity_Status (
+mse_check_pn_motor_normal BIT,
+mse_check_pn_motor_restless BIT,
+mse_check_pn_motor_hyperactive BIT,
+mse_checK_pn_motor_bizzare_gestures BIT,
+mse_check_pn_motor_mannerisms BIT,
+mse_check_pn_motor_stereotypes BIT,
+mse_check_pn_motor_posturing BIT,
+mse_check_pn_motor_ties BIT,
+mse_check_pn_motor_tremors BIT,
+mse_check_pn_motor_psychomotor_agitation BIT,
+mse_check_pn_motor_psychomotor_retardation BIT,
+ACN BIGINT,
+);
+
+CREATE TABLE Progress_Patient_Mood_Status (
+mse_check_pn_mood_tired BIT,
+mse_check_pn_mood_ok BIT,
+mse_check_pn_mood_alright BIT,
+mse_check_pn_mood_happy BIT,
+mse_check_pn_mood_happy BIT,
+mse_check_pn_mood_good BIT,
+mse_check_pn_mood_sad BIT,
+mse_check_pn_mood_bad BIT,
+mse_check_pn_mood_mad BIT,
+mse_check_pn_mood_desperate BIT,
+mse_check_pn_mood_worried BIT,
+mse_check_pn_mood_anxious BIT,
+mse_check_pn_mood_angry BIT,
+mse_opentxt_pn_mood_other VARCHAR(1000),
+mse_check_pn_mood_patient_dna 
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Patient_Affect_Status (
+mse_check_pn_affect_flat BIT,
+mse_check_pn_affect_blunted BIT,
+mse_check_pn_affect_constricted BIT,
+mse_check_pn_affect_full_range BIT,
+mse_check_pn_affect_depressed BIT,
+mse_check_pn_affect_anxious BIT,
+mse_check_pn_affect_expansive BIT,
+mse_check_pn_affect_congruent_to_mood BIT.
+mse_check_pn_affect_incongruent_to_mood BIT,
+mse_openttxt_pn_affect_other VARCHAR(1000),
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Patient_Thought_Process_Status (
+mse_check_pn_thoughtproc_logical BIT,
+mse_check_pn_thoughtproc_tangential BIT,
+mse_check_pn_thoughtproc_loose_associations BIT,
+mse_check_pn_thoughtproc_circumstantions BIT,
+mse_check_pn_thoughtproc_flightofideas BIT,
+mse_check_pn_thoughtproc_overinclusive BIT,
+mse_check_pn_thoughtproc_word_salad BIT,
+mse_check_pn_thoughtproc_thought_blocking BIT,
+mse_openttxt_pn_thoughtproc_other VARCHAR(1000),
+ACN BIGINT,
+
+);
+
+CREATE TABLE Progress_Patient_Perception_Status (
+mse_check_pn_perc_auditory BIT,
+mse_check_pn_perc_command BIT,
+mse_check_pn_perc_visual BIT,
+mse_check_pn_perc_tactile BIT,
+mse_check_pn_perc_olfactory BIT,
+mse_check_pn_perc_gustatory BIT,
+mse_check_pn_perc_illusions BIT,
+mse_check_pn_perc_depersoalization BIT,
+mse_check_pn_perc_derealization BIT,
+mse_check_pn_perc_no_alteration BIT
+mse_openttxt_pn_perc_other VARCHAR(1000),
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Patient_Recent_Memory_Status (
+mse_check_pn_recmem_5minrecall BIT,
+mse_check_pn_recmem_6digit BIT,
+mse_check_pn_recmem_age_approp BIT,
+mse_check_pn_recmem_within_normal_limits BIT,
+mse_check_pn_recmem-impaired BIT,
+ACN BIGINT,
+
+);
+
+CREATE TABLE Progress_Patient_Estimated_Intelligence_Status (
+mse_check_pn_estint_vocab BIT,
+mse_check_pn_estint_education BIT,
+mse_opentxt_pn_estint_other BIT,
+mse_check_pn_estint_above_avg BIT,
+mse_check_pn_estint_avg BIT,
+mse_check_pn_estint_below_avg BIT,
+ACN BIGINT,
+
+);
+
+
+ CREATE TABLE Progress_Patient_Remote_Memory_Status (
+mse_check_pn_rmtmem_former_pres BIT,
+mse_check_pn_rmtmem_age_approp BIT,
+mse_check_pn_rmtmem_lastnews BIT,
+mse_check_pn_rmtmem_citybirth BIT,
+mse_check_pn_rmtmem_oldschoolname BIT,
+mse_opentxt_pn_rmtmem_other VARCHAR(1000)
+mse_check_pn_rmtmem_within_normal_limits BIT,
+mse_check_pn_rmtmem_impaired BIT
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Patient_Abstract_Reasoning_Status (
+mse_check_pn_abstract_similarities BIT,
+mse_check_pn_abstract_proverbs BIT,
+mse_opentxt_pn_abstract_other VARCHAR(1000)
+mse_check_pn_abstract_within_normal_limits BIT,
+mse_check_pn_abstract_impaired BIT,
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Medical_Diagnosis_List (
+pn_medical_dx_idcode BIT,
+pn_medical_dx_icd10_name BIT,
+ACN BIGINT,
+
+);
+
+CREATE TABLE Progress_Psychiatric_Diagnosis_List (
+pn_psych_dx_idcode BIT,
+pn_psych_dx_icd10_name BIT,
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Psychiatric_Diagnosis (
+dx_pn_check_any_changes_in_dx BIT,
+dx_pn_psych VARCHAR(1000),
+dx_pn_medical VARCHAR (1000),
+ACN BIGINT,
+);
+
+ CREATE TABLE Progress_Estimated_Length_of_Stay (
+len_check_pn_less5 BIT,
+len_check_pn_5to7 BIT,
+len_check_pn_more7 BIT,
+len_check_pn_to_be_determined BIT,
+len_check_pn_other VARCHAR(1000),
+ACN BIGINT,
+
+);
+
+ CREATE TABLE Progress_Rationale_for_Continued_Stay (
+rcs_pn_check_medical_stabilization BIT,
+rcs_pn_check_milieu_therapy BIT,
+rcs_pn_check_suicidal_intent BIT,
+rcs_pn_check_homicidal_ide
